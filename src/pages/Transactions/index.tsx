@@ -1,6 +1,6 @@
-import { Header } from "../../components/Header/Header";
-import { Summary } from "../../components/Summary/Summary";
-import { SearchForm } from "./components/SearchForn/SearchForm";
+import { Header } from "../../components/Header/intex";
+import { Summary } from "../../components/Summary";
+import { SearchForm } from "./components/SearchForn";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./styles";
 
 export function Transactions () {
