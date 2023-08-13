@@ -24,7 +24,7 @@ export function NewTransactionModal () {
     })
 
     async function handleAddNewTransaction (data: NewTransactionFormSchema) {
-        await createTransaction({...data, createdAt: new Date()})
+        await createTransaction(data)
 
         reset()
     }

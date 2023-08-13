@@ -33,7 +33,7 @@ export function TransactionsProvider ({children}: TransactionsProviderProps) {
     const [transactions, setTransactions] = useState<Transaction[]>([])
 
     async function createTransaction (transaction: CreateTransaction) {
-        const response = await api.post('/transactions', transaction)
+        const response = await api.post('/transactions', {...transaction, createdAt: new Date()})
 
         setTransactions(state => [response.data, ...state])
     }
