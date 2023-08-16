@@ -1,4 +1,4 @@
-import { Header } from '../../components/Header/intex'
+import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { SearchForm } from './components/SearchForn'
 import {
